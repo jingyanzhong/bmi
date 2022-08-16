@@ -14,18 +14,19 @@ display();
 function updateBmiList(e) {
     if (height.value === '' || weight.value === '' || height.value <= 0 || weight.value <= 0 ) {
         alert('請輸入身高及體重，數字不可為0或負值');
-        return;
-    };
-    //change BTN
-    changeBtn.addEventListener('click', function (e) {
-        if (e.target.textContent === '看結果') {
-            submitBtn.classList.add('hide');
-            bmiBtn.classList.remove('hide')
-        } else {
-            submitBtn.classList.remove('hide');
-            bmiBtn.classList.add('hide')
-        }
-    });
+    }else {
+        //change BTN
+        changeBtn.addEventListener('click', function (e) {
+            if (e.target.textContent === '看結果') {
+                submitBtn.classList.add('hide');
+                bmiBtn.classList.remove('hide')
+            } else {
+                submitBtn.classList.remove('hide');
+                bmiBtn.classList.add('hide')
+            }
+        });
+    }
+
 
     const heightNum = parseInt(document.getElementById('height').value) / 100;
     const weightNum = parseInt(document.getElementById('weight').value);
