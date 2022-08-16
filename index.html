@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <title>BMI計算</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="dark-bg">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="logo"></div>
+                    <div class="headerText">
+                        <div class="height">
+                            <label for="height" class="yellow">身高 cm</label>
+                            <input type="text" class="h3" id="height" placeholder="請輸入身高">
+                        </div>
+                        <div class="weight">
+                            <label for="weight" class="yellow">體重 kg</label>
+                            <input type="text" class="h3" id="weight" placeholder="請輸入體重">
+                        </div>
+                    </div>
+                    <div class="headerBtn d-flex">
+                        <button type="button" class="h3 yellow-bg submitBtn">看結果</button>
+                        <button type="button" class="h3 bmiBtn hide">
+                            <span class="bmiNum"></span>
+                            <span class="bmiTitle">BMI</span>
+                            <i class="resetIcon fa-solid fa-arrows-rotate"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main light-bg">
+            <div class="container">
+                <h2 class="h3">BMI 紀錄</h2>
+                <ul class="bmiList">
+                </ul>
+                <input type="button" class="resetBtn" value="清除所有資料">
+            </div>
+        </section>
+        <footer class="yellow-bg">
+            <img class="footerLogo" src="https://raw.githubusercontent.com/soma0529/BMI-Caculator/main/pics/BMICLogo.png" alt="BMICLogo">
+        </footer>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
